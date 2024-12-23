@@ -1,5 +1,5 @@
 const HostAppComponents = () => {
-    return <h3>HostAppComponents</h3>
+    return <h3>HostAppComponent</h3>
 }
 
 export default HostAppComponents
