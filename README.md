@@ -48,4 +48,3 @@ export default tseslint.config({
   },
 })
 ```
-# vite-federation-test-two
