@@ -2,7 +2,7 @@ import { lazy, Suspense } from 'react';
 import './App.css'
 import HostAppComponent from './components/hostAppComponent'
 
-const SecondAppComponent = lazy(() => import('sharedComponents/SecondAppComponent') as any);
+const SecondAppComponent = lazy(() => import('vite_federation_test_two/SecondAppComponent') as any);
 
 function App() {
   return (

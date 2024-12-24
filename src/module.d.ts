@@ -1,1 +1,1 @@
-declare module 'sharedComponents/*' {}
+declare module 'vite_federation_test_two/*'
