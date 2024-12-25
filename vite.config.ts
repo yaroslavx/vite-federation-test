@@ -8,6 +8,10 @@ export default defineConfig({
     react(),
     federation({
       name: 'vite-federation-test-one',
+      filename: 'vite_federation_test_one.js',
+      exposes: {
+          './HostAppComponent': './src/components/HostAppComponent.tsx',
+      },
       remotes: {
         vite_federation_test_two: "http://localhost:5001/assets/vite_federation_test_two.js",
       },
