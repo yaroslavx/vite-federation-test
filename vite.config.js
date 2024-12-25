@@ -3,14 +3,6 @@ import react from '@vitejs/plugin-react';
 import federation from "@originjs/vite-plugin-federation";
 import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
-    preview: {
-        host: 'localhost',
-        port: 5000,
-        strictPort: true,
-    },
-    server: {
-        port: 5000,
-    },
     plugins: [
         react(),
         federation({
@@ -22,6 +14,14 @@ export default defineConfig({
         }),
         tsconfigPaths(),
     ],
+    preview: {
+        host: 'localhost',
+        port: 5000,
+        strictPort: true,
+    },
+    server: {
+        port: 5000,
+    },
     build: {
         target: 'esnext',
         minify: false,
